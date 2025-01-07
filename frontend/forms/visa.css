@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+::selection {
+  background-color: aquamarine;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #dfe9f3 50%, white 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 0vw;
+}
+
+h1 {
+  text-align: center;
+  color: #202020;
+  font-size: 2rem;
+  margin: 0vh 0vw 2vh;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2vh 1vw;
+  width: 40%;
+  animation: pop-up-animation 0.6s linear;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1vh;
+}
+
+label {
+  display: block;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 0.5vh;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: black;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+  margin-top: 0.5vh;
+}
+
+button[type="submit"] {
+  margin: 1vh 0vw;
+  padding: 1.5vh 0vw;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+}
+
+@keyframes pop-up-animation {
+  0% {
+    transform: rotateX(100deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media only screen and (min-width: 737px) and (max-width: 833px) {
+  body {
+    padding: 2vh 0vw;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  form {
+    padding: 1vh 3vw;
+    width: 90%;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input,
+  select {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  button[type="submit"] {
+    padding: 1vh 2vw;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  body {
+    padding: 2vh 0vw;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  form {
+    padding: 1vh 3vw;
+    width: 90%;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input,
+  select {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  button[type="submit"] {
+    padding: 1vh 2vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 2vh 0vw;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  form {
+    padding: 1vh 3vw;
+    width: 90%;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input,
+  select {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  button[type="submit"] {
+    padding: 1vh 2vw;
+  }
+}

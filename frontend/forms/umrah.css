@@ -1,0 +1,993 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+::selection {
+  background-color: aquamarine;
+  color: black;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#img {
+  height: 50%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  transition: background-image 1s ease-in-out;
+}
+
+#img p {
+  backdrop-filter: blur(20px);
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  text-align: center;
+  padding: 2vh 2vw;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+#img span {
+  color: rgb(200, 196, 78);
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5vh;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248, 0.7) 0%,
+    rgb(168, 222, 248, 0.3) 21.8%,
+    rgb(189, 250, 205, 0.7) 35.6%,
+    rgb(243, 250, 189, 0.3) 52.9%,
+    rgb(250, 227, 189, 0.3) 66.8%,
+    rgb(248, 172, 172, 0.3) 90%,
+    rgb(254, 211, 252, 0.3) 99.7%
+  );
+}
+
+#heading {
+  text-align: center;
+  font-weight: 600;
+  padding: 3vh;
+}
+
+.main-container {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.627);
+  padding: 3vh 5vw;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.453);
+}
+
+.main-container h2 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 5vh 0vw;
+  padding: 4vh 2vw;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.main h4 {
+  margin: 1vh 0vw 5vh;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2vh 3vw;
+  background-color: rgb(222, 168, 248, 0.4);
+  border-radius: 50px;
+}
+
+#hotel-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vh 2vw;
+  margin: 5vh 0vw;
+}
+
+.hotel-card {
+  height: auto;
+  width: 16vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s !important;
+  &:hover {
+    transform: translateY(-1vh) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hotel-card img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 25vh;
+}
+
+.hotel-rating {
+  padding: 0vh 1vw;
+  color: #f5c60d;
+}
+
+.hotel-card p {
+  padding: 0.5vh 1vw;
+}
+
+/* SECTION ONE */
+
+#sec-one .shares-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0vh 5vw;
+}
+
+#sec-one h3 {
+  margin: 1vh 0vw 5vh;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2vh 3vw;
+  background-color: #28a74522;
+  border-radius: 50px;
+}
+
+#sec-one table {
+  background-color: #28a74533;
+  text-align: center;
+  padding: 0.5vh 0.2vw;
+  border-radius: 20px;
+}
+
+#sec-one th {
+  padding: 2vh 1vw;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+#sec-one td {
+  padding: 2vh 2vw;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#sec-one .dis {
+  background-color: #28a74533;
+  border-radius: 20px;
+  padding: 1vh 1vw;
+}
+
+#sec-one .dis h3 {
+  padding: 0;
+  margin: 1vh 0vw 1vh;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+#sec-one .dis p {
+  margin: 1vh 0vw;
+}
+
+/* SECTION TWO */
+
+#sec-two .shares-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0vh 5vw;
+}
+
+#sec-two h3 {
+  margin: 1vh 0vw 5vh;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 2vh 3vw;
+  background-color: #dc354522;
+  border-radius: 50px;
+}
+
+#sec-two table {
+  background-color: #dc354533;
+  text-align: center;
+  padding: 0.5vh 0.2vw;
+  border-radius: 20px;
+}
+
+#sec-two th {
+  padding: 2vh 1vw;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+#sec-two td {
+  padding: 2vh 2vw;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#sec-two .dis {
+  background-color: #dc354533;
+  border-radius: 20px;
+  padding: 1vh 1vw;
+}
+
+#sec-two .dis h3 {
+  font-weight: bolder;
+  margin: 1vh 0vw;
+  font-size: 1.3rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+#sec-two .dis p {
+  margin: 1vh 0vw;
+}
+
+#serveices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#serveices h2 {
+  font-weight: 700;
+  margin: 2vh 0vw;
+}
+
+#serveices p {
+  font-size: 1.3rem;
+  margin: 1vh 0vw;
+}
+
+#serveices .note {
+  font-size: 1rem;
+  margin: 1vh 0vw;
+}
+
+.policy h3 {
+  text-align: left;
+  color: #186d96;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1vh 0vw;
+}
+
+.policy ul {
+  color: #186d96;
+  font-size: 1.5rem;
+  margin-left: 1.5vw;
+}
+
+.policy p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+#note {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2vh;
+  color: white;
+  background-color: #0c4a1d;
+  font-style: italic;
+}
+
+.contact-link {
+  background-color: #186d96;
+  padding: 1.5vh 1.5vw;
+  font-weight: 700;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 5vh;
+}
+
+/* Hajj Form Pop-Up Styles */
+.contact-form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.contact-form {
+  background: rgba(255, 255, 255, 0.481);
+  padding: 1vh 1vw;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 350px;
+  animation: pop-up-animation 0.6s;
+}
+.contact-form h3 {
+  margin-bottom: 1vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 600;
+}
+.contact-form label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.381);
+  padding: 10px;
+  margin: 1vh 0;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  padding: 1vh 1vw;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+.contact-form button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+@keyframes pop-up-animation {
+  0% {
+    transform: rotateX(100deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media only screen and (min-width: 737px) and (max-width: 833px) {
+  #img {
+    height: 40%;
+  }
+
+  #img p {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding-bottom: 3vh;
+  }
+
+  .main-container {
+    padding: 3vh 3vw;
+  }
+
+  .main-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    margin: 4vh 0vw;
+    padding: 3vh 1vw;
+  }
+
+  #hotel-list {
+    flex-wrap: wrap;
+    gap: 3vh 5vw;
+  }
+
+  .hotel-card {
+    height: auto;
+    width: 40%;
+  }
+
+  .hotel-card img {
+    height: 20vh;
+  }
+
+  .main h3 {
+    font-size: 1.4rem;
+    padding: 2vh 8vw;
+  }
+
+  .main h4 {
+    font-size: 1.3rem;
+    padding: 1.5vh 4vw;
+  }
+
+  .main p {
+    text-align: center;
+  }
+
+  /* SECTION ONE */
+
+  #sec-one .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-one h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+  }
+
+  #sec-one table {
+    padding: 1vh 1vw;
+  }
+
+  #sec-one th {
+    padding: 1vh 1vw;
+    font-size: 1.3rem;
+  }
+
+  #sec-one td {
+    padding: 1vh 1vw;
+    font-size: 1.2rem;
+  }
+
+  #sec-one .dis {
+    padding: 1vh 2vw;
+  }
+
+  #sec-one .dis h3 {
+    margin: 1vh 0vw;
+    font-size: 1.4rem;
+  }
+
+  #sec-one .dis p {
+    font-size: 1.2rem;
+    margin: 0.5vh 0vw;
+  }
+
+  /* SECTION TWO */
+
+  #sec-two .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-two h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+  }
+
+  #sec-two table {
+    padding: 1vh 1vw;
+  }
+
+  #sec-two th {
+    padding: 1vh 1vw;
+    font-size: 1.3rem;
+  }
+
+  #sec-two td {
+    padding: 1vh 1vw;
+    font-size: 1.2rem;
+  }
+
+  #sec-two .dis {
+    padding: 1vh 2vw;
+  }
+
+  #sec-two .dis h3 {
+    margin: 1vh 0vw;
+    font-size: 1.4rem;
+  }
+
+  #sec-two .dis p {
+    font-size: 1.2rem;
+    margin: 0.5vh 0vw;
+  }
+
+  #serveices h2 {
+    font-size: 1.8rem;
+  }
+
+  #serveices p {
+    font-size: 1.4rem;
+  }
+
+  #serveices .note {
+    font-size: 1.1rem;
+  }
+
+  .policy {
+    padding: 0vh 2vw;
+  }
+
+  .policy h3 {
+    font-size: 1.5rem;
+  }
+
+  .policy ul {
+    font-size: 1.6rem;
+    margin-left: 2vw;
+  }
+
+  .policy p {
+    font-size: 1.1rem;
+  }
+
+  #note {
+    font-size: 1.3rem;
+    padding: 1.5vh;
+  }
+
+  .contact-link {
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 60%;
+    padding: 2vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form label {
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1vh 1vw;
+  }
+  .contact-form button {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+    width: 10vw;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  #img {
+    height: 40%;
+  }
+
+  #img p {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding-bottom: 3vh;
+  }
+
+  #heading {
+    font-size: 1.8rem;
+  }
+
+  .main-container {
+    padding: 3vh 4vw;
+  }
+
+  .main-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    margin: 3vh 0vw;
+    padding: 3vh 1vw;
+  }
+
+  #hotel-list {
+    flex-wrap: wrap;
+    gap: 3vh 4vw;
+  }
+
+  .hotel-card {
+    width: 45%;
+  }
+
+  .hotel-card img {
+    height: 18vh;
+  }
+
+  .hotel-card p {
+    font-size: 1rem;
+  }
+
+  .main h3 {
+    font-size: 1.4rem;
+    padding: 2vh 8vw;
+  }
+
+  .main h4 {
+    font-size: 1.2rem;
+    padding: 1.5vh 4vw;
+  }
+
+  .main p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION ONE */
+
+  #sec-one .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-one h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+  }
+
+  #sec-one table {
+    padding: 0.5vh 0.2vw;
+  }
+
+  #sec-one th {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  #sec-one td {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  #sec-one .dis {
+    padding: 1vh 3vw;
+  }
+
+  #sec-one .dis h3 {
+    margin: 0.5vh 0vw;
+    font-size: 1.3rem;
+  }
+
+  #sec-one .dis p {
+    font-size: 1.1rem;
+    margin: 0.5vh 0vw;
+  }
+
+  /* SECTION TWO */
+
+  #sec-two .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-two h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+  }
+
+  #sec-two table {
+    padding: 0.5vh 0.2vw;
+  }
+
+  #sec-two th {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  #sec-two td {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+
+  #sec-two .dis {
+    padding: 1vh 3vw;
+  }
+
+  #sec-two .dis h3 {
+    margin: 0.5vh 0vw;
+    font-size: 1.3rem;
+  }
+
+  #sec-two .dis p {
+    font-size: 1.1rem;
+    margin: 0.5vh 0vw;
+  }
+
+  #serveices h2 {
+    font-size: 1.6rem;
+  }
+
+  #serveices p {
+    font-size: 1.4rem;
+  }
+
+  #serveices .note {
+    font-size: 1.1rem;
+  }
+
+  .policy {
+    padding: 0vh 2vw;
+  }
+
+  .policy h3 {
+    font-size: 1.5rem;
+  }
+
+  .policy ul {
+    font-size: 1.5rem;
+    margin-left: 2vw;
+  }
+
+  #note {
+    font-size: 1.2rem;
+  }
+
+  .contact-link {
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 80%;
+    padding: 1vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 2rem;
+  }
+
+  .contact-form label {
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+  .contact-form button {
+    padding: 1vh 2vw;
+    font-size: 1.1rem;
+    width: 18vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #img {
+    height: 40%;
+  }
+
+  #img p {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding-bottom: 3vh;
+  }
+
+  #heading {
+    font-size: 1.5rem;
+  }
+
+  .main-container {
+    padding: 2vh 2vw;
+  }
+
+  .main-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .main {
+    margin: 3vh 0vw;
+    padding: 3vh 1vw;
+  }
+
+  #hotel-list {
+    flex-wrap: wrap;
+    gap: 2vh 3vw;
+  }
+
+  .hotel-card {
+    width: 45%;
+  }
+
+  .hotel-card img {
+    height: 18vh;
+  }
+
+  .hotel-card p {
+    font-size: 0.9rem;
+  }
+
+  .main h3 {
+    font-size: 1.2rem;
+    padding: 1.5vh 8vw;
+  }
+
+  .main h4 {
+    font-size: 1rem;
+    padding: 1.5vh 3vw;
+  }
+
+  .main p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION ONE */
+
+  #sec-one .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-one h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 0.9rem;
+    padding: 2vh 4vw;
+  }
+
+  #sec-one table {
+    padding: 0.5vh 0.2vw;
+  }
+
+  #sec-one th {
+    padding: 1vh 1vw;
+    font-size: 0.9rem;
+  }
+
+  #sec-one td {
+    padding: 1vh 1vw;
+    font-size: 0.9rem;
+  }
+
+  #sec-one .dis {
+    padding: 1vh 2vw;
+  }
+
+  #sec-one .dis h3 {
+    margin: 0.5vh 0vw;
+    font-size: 1rem;
+  }
+
+  #sec-one .dis p {
+    font-size: 0.9rem;
+    margin: 0.5vh 0vw;
+  }
+
+  /* SECTION TWO */
+
+  #sec-two .shares-con {
+    flex-wrap: wrap;
+    gap: 2vh 0vw;
+  }
+
+  #sec-two h3 {
+    margin: 1vh 0vw 3vh;
+    font-size: 0.9rem;
+    padding: 2vh 4vw;
+  }
+
+  #sec-two table {
+    padding: 0.5vh 0.2vw;
+  }
+
+  #sec-two th {
+    padding: 1vh 1vw;
+    font-size: 0.9rem;
+  }
+
+  #sec-two td {
+    padding: 1vh 1vw;
+    font-size: 0.9rem;
+  }
+
+  #sec-two .dis {
+    padding: 1vh 2vw;
+  }
+
+  #sec-two .dis h3 {
+    margin: 0.5vh 0vw;
+    font-size: 1rem;
+  }
+
+  #sec-two .dis p {
+    font-size: 0.9rem;
+    margin: 0.5vh 0vw;
+  }
+
+  #serveices h2 {
+    font-size: 1.6rem;
+  }
+
+  #serveices p {
+    font-size: 1.1rem;
+  }
+
+  #serveices .note {
+    font-size: 1rem;
+  }
+
+  .policy {
+    padding: 0vh 2vw;
+  }
+
+  .policy h3 {
+    font-size: 1.4rem;
+  }
+
+  .policy ul {
+    font-size: 1rem;
+    margin-left: 3vw;
+  }
+
+  #note {
+    font-size: 0.9rem;
+  }
+
+  .contact-link {
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 80%;
+    padding: 1vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1vh 1vw;
+  }
+  .contact-form button {
+    padding: 1vh 2vw;
+    width: 20vw;
+  }
+}
