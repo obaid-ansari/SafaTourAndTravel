@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+::selection {
+  background-color: aquamarine;
+  color: black;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #dfe9f3 50%, white 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5vh 0vw;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1vh 1vw;
+  width: 40%;
+  animation: pop-up-animation 0.6s linear;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pop-up-animation {
+  0% {
+    transform: rotateX(100deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+  color: #202020;
+}
+
+label {
+  display: block;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: vh;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.5vh;
+  background-color: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+button {
+  margin-bottom: 2vh;
+  padding: 1.5vh 1.5vw;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+}
+
+@media only screen and (min-width: 737px) and (max-width: 833px) {
+  body {
+    padding: 4vh 0vw;
+  }
+
+  .container {
+    padding: 1vh 2vw;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  label {
+    padding: 0.3vh 0vw;
+    font-size: 1.1rem;
+  }
+
+  button {
+    margin-bottom: 1vh;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  body {
+    padding: 4vh 0vw;
+  }
+
+  .container {
+    padding: 1vh 2vw;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  label {
+    font-size: 1.1rem;
+    padding: 0.5vh 0vw;
+  }
+
+  button {
+    margin-bottom: 1vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 3vh 0vw;
+  }
+
+  .container {
+    padding: 1vh 3vw;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin: 1vh 0vw 2vh;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  button {
+    margin-bottom: 1vh;
+  }
+}

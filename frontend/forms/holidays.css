@@ -1,0 +1,516 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+::selection {
+  background-color: aquamarine;
+  color: black;
+}
+
+html,
+body {
+  width: 100%;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248, 0.2) 0%,
+    rgb(168, 222, 248, 0.2) 21.8%,
+    rgb(189, 250, 205, 0.2) 35.6%,
+    rgb(243, 250, 189, 0.2) 52.9%,
+    rgb(250, 227, 189, 0.2) 66.8%,
+    rgb(248, 172, 172, 0.2) 90%,
+    rgb(254, 211, 252, 0.2) 99.7%
+  );
+}
+
+/* Popular Destination Styling */
+
+.places {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0vh 6vw 8vh 6vw;
+}
+
+.places h2 {
+  font-size: 2.2rem;
+  margin: 5vh 0vw 4vh 0vw;
+  text-align: center;
+  font-weight: 600;
+}
+
+.places h4 {
+  font-size: 1.7rem;
+  margin: 3vh 0vw 4vh 3vw;
+  text-align: left;
+  font-weight: 400;
+}
+
+.destination-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh 3vw;
+}
+
+.destination-card {
+  height: auto;
+  width: 18vw;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s !important ;
+  &:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+.destination-card img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 30vh;
+}
+
+.destination-card h3 {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+.destination-card p {
+  padding: 5px 10px;
+}
+/* BUTTON */
+.contact-link {
+  background-color: #186d96;
+  padding: 1.5vh 1.5vw;
+  font-weight: 700;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 1vh;
+}
+
+/* Hajj Form Pop-Up Styles */
+.contact-form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.259);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.contact-form {
+  background: rgba(255, 255, 255, 0.481);
+  padding: 1vh 1vw;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 350px;
+  animation: pop-up-animation 0.6s;
+}
+.contact-form h3 {
+  margin-bottom: 1vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #333333;
+}
+.contact-form label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.381);
+  width: 100%;
+  padding: 10px;
+  margin: 1vh 0;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  padding: 1vh 1vw;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+.contact-form button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+@keyframes pop-up-animation {
+  0% {
+    transform: rotateX(100deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+#des-container {
+  padding: 2vh 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#des-container h3 {
+  font-size: 2rem;
+  padding: 5vh 0vw 4vh 0vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates 6 equal columns */
+  gap: 6vh 4vw;
+  padding: 3vh 0vw 8vh 0vw;
+}
+
+.place-des {
+  grid-column: span 3; /* Each item spans 2 columns */
+  border-radius: 15px;
+  padding: 1vh 1vw;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-des h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2vh;
+}
+
+.place-des p {
+  font-size: 0.8rem;
+  margin: 2vh 0vw;
+}
+
+.place-des p b {
+  font-weight: 500;
+}
+
+.place-des ul {
+  font-size: 0.8rem;
+  padding-left: 2vw;
+  padding-bottom: 1vh;
+}
+
+/* For tablets (max-width: 768px) */
+@media only screen and (min-width: 737px) and (max-width: 833px) {
+  .places {
+    padding: 0vh 4vw 5vh 4vw;
+  }
+
+  .places h2 {
+    font-size: 2rem;
+    margin: 1vh 0vw 3vh 0vw;
+  }
+
+  .places h4 {
+    font-size: 1.5rem;
+    margin: 2vh 0vw 2vh 8vw;
+  }
+
+  .destination-card-container {
+    flex-wrap: wrap;
+    gap: 3vh 5vw;
+  }
+
+  .destination-card {
+    height: auto;
+    width: 40%;
+  }
+
+  .destination-card img {
+    height: 20vh;
+  }
+
+  .destination-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-link {
+    font-size: 1.3rem;
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 60%;
+    padding: 2vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form label {
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1vh 1vw;
+  }
+  .contact-form button {
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+    width: 10vw;
+  }
+
+  #des-container {
+    padding: 2vh 2vw;
+  }
+
+  #des-container h3 {
+    font-size: 1.8rem;
+    padding: 3vh 0vw;
+  }
+
+  .description {
+    display: grid;
+    gap: 2vh 2vw;
+    grid-template-columns: repeat(6, 1fr); /* Creates 6 equal columns */
+  }
+
+  .place-des {
+    padding: 0vh 2vw;
+  }
+
+  .place-des h4 {
+    font-size: 1.3rem;
+    margin-top: 1vh;
+  }
+
+  .place-des p {
+    font-size: 0.9rem;
+    margin: 1vh 0vw;
+  }
+
+  .place-des ul {
+    font-size: 0.9rem;
+    padding-left: 5vw;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  .places {
+    padding: 3vh 1vw;
+  }
+
+  .places h2 {
+    margin: 0vh 0vw 2vh;
+    font-size: 2rem;
+  }
+
+  .places h4 {
+    font-size: 1.5rem;
+    margin: 2vh 0vw 2vh 4vw;
+  }
+
+  .destination-card-container {
+    flex-wrap: wrap;
+    gap: 3vh 2vw;
+  }
+
+  .destination-card {
+    width: 46%;
+  }
+
+  .destination-card img {
+    height: 18vh;
+  }
+
+  .destination-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .destination-card p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .contact-link {
+    font-size: 1.3rem;
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 80%;
+    padding: 1vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 2rem;
+  }
+
+  .contact-form label {
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+  }
+  .contact-form button {
+    padding: 1vh 2vw;
+    font-size: 1.1rem;
+    width: 18vw;
+  }
+
+  #des-container {
+    padding: 2vh 4vw;
+  }
+
+  #des-container h3 {
+    font-size: 1.6rem;
+    padding: 3vh;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns */
+    gap: 2vh 0vw;
+  }
+
+  .place-des {
+    grid-column: span 12; /* Each item spans 12 columns */
+    padding: 0vh 3vw;
+  }
+
+  .place-des h4 {
+    margin-top: 1vh;
+  }
+
+  .place-des p {
+    font-size: 0.9rem;
+  }
+
+  .place-des ul {
+    font-size: 0.9rem;
+    padding-left: 5vw;
+  }
+}
+
+/* For phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .places {
+    padding: 2vh 1vw 3vh;
+  }
+
+  .places h2 {
+    margin: 2vh 3vw 3vh;
+    font-size: 1.8rem;
+  }
+
+  .places h4 {
+    font-size: 1.2rem;
+    margin: 2vh 0vw 2vh 4vw;
+  }
+
+  .destination-card-container {
+    flex-wrap: wrap;
+    gap: 2vh 3vw;
+  }
+
+  .destination-card {
+    width: 45%;
+  }
+
+  .destination-card img {
+    height: 18vh;
+  }
+
+  .destination-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .destination-card p {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .contact-link {
+    font-size: 1.3rem;
+    padding: 1vh 2vw;
+  }
+
+  .contact-form {
+    max-width: 80%;
+    padding: 1vh 2vw;
+  }
+  .contact-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1vh 1vw;
+  }
+  .contact-form button {
+    padding: 1vh 2vw;
+    width: 20vw;
+  }
+
+  #des-container {
+    padding: 2vh 4vw;
+  }
+
+  #des-container h3 {
+    font-size: 1.5rem;
+    padding: 3vh 0;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Creates 6 equal columns */
+    gap: 3vh 0vw;
+  }
+
+  .place-des {
+    padding: 0vh 3vw;
+    grid-column: span 12; /* Each item spans 2 columns */
+  }
+
+  .place-des h4 {
+    font-size: 1.3;
+    margin-top: 1vh;
+  }
+
+  .place-des p {
+    font-size: 0.9rem;
+    margin: 2vh 0vw;
+  }
+
+  .place-des ul {
+    font-size: 0.9rem;
+    padding-left: 4vw;
+  }
+}

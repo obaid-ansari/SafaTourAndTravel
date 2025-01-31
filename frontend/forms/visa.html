@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Link -->
+    <link rel="stylesheet" href="visa.css" />
+    <!-- Website Icon -->
+    <link rel="icon" type="image/x-icon" href="imgs/Logo.WebP" />
+    <!-- Website Description -->
+    <meta
+      name="description"
+      content="Simplify your travel with Safa tour and Travel' expert visa services. Whether for business or leisure, we assist with visa applications to various destinations, ensuring a smooth and stress-free experience." />
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="visa services, travel visa, visa application, visa assistance, Safa tour and Travel, visa solutions, business visa, tourist visa, visa processing, international travel" />
+    <!-- For Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Charm:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Parisienne&family=Playwrite+AU+VIC+Guides&display=swap"
+      rel="stylesheet" />
+    <title>
+      Visa Services | Safa tour and Travel – Hassle-Free Visa Solutions
+    </title>
+  </head>
+  <body>
+    <form id="visaForm" action="/submit-visa-form" method="POST">
+      <h1>Visa Application Form</h1>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="purpose">Purpose of Visit:</label>
+      <select id="purpose" name="purpose" required>
+        <option value="Tourism">Tourism</option>
+        <option value="Business">Business</option>
+        <option value="Medical Treatment">Medical Treatment</option>
+        <option value="Employment">Employment</option>
+      </select>
+
+      <div class="form-group">
+        <label for="journeyType">Journey Type*</label>
+        <select id="journeyType" name="journeyType" required>
+          <option value="OneWay">One Way</option>
+          <option value="Return">Return</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="departureDate">Departure Date*</label>
+        <input type="date" id="departureDate" name="departureDate" required />
+      </div>
+
+      <div id="returnDateContainer" style="display: none">
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" />
+      </div>
+
+        <label for="country">Visa For Which Country:</label>
+        <input style="margin-bottom: 0.5vh;" type="text" id="country" name="country" required />
+
+        <!-- Add more countries as needed -->
+      </select>
+      <select id="visaType" name="visaType" required>
+        <option value="Tourist Visa">Tourist Visa</option>
+        <option value="Business Visa">Business Visa</option>
+        <option value="Work Visa">Work Visa</option>
+        <option value="Medical Visa">Medical Visa</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="visa.js"></script>
+  </body>
+</html>

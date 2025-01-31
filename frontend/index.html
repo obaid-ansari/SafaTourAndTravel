@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Website Icon -->
+    <link rel="icon" type="image/x-icon" href="forms/imgs/Logo.WebP" />
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Developer -->
+    <meta name="author" content="Ansari Obaid" />
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Website Description -->
+    <meta
+      name="description"
+      content="Safa Tour and Travel offers premium services including flight booking, visa assistance, hotel reservations, holiday packages, forex exchange, and religious pilgrimages such as Hajj, Umrah, and Ramadan packages. Plan your perfect journey with us." />
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Safa Tour and Travel, flight booking, visa services, hotel booking, holiday packages, forex exchange, Hajj packages, Umrah packages, Ramadan packages, travel agency, religious tours, travel planning" />
+    <meta name="robots" content="index ,follow" />
+    <!-- For Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Charm:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Parisienne&family=Playwrite+AU+VIC+Guides&display=swap"
+      rel="stylesheet" />
+    <title>Safa Tour And Travels</title>
+  </head>
+  <body>
+    <header id="home">
+      <!-- Navbar Section -->
+      <nav>
+        <div class="navbar">
+          <div class="logosec">
+            <p class="logo" aria-label="Safa Tour and Travel logo">
+              صٰفَاء
+              <span>SAFA</span>
+            </p>
+
+            <img id="ita" src="forms/imgs/ITA.WebP" alt="ITIA Logo" />
+          </div>
+          <div id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about-us" class="about">About Us</a>
+            <div class="dropdown">
+              <a href="#" class="services"
+                >Our Services <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-content">
+                <li><a href="forms/flight.html">Flight Tickets</a></li>
+                <li><a href="forms/visa.html">Visa Assistance</a></li>
+                <li><a href="forms/hotels.html">Hotels Booking</a></li>
+                <li><a href="#" class="contact-link">Hajj Packages</a></li>
+                <li><a href="forms/forexexchange.html">Forex Exchange</a></li>
+                <li><a href="forms/holidays.html">Holiday Packages</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="umrah"
+                >Umrah <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="forms/umrah.html#sec-one">Economy Umrah Packages</a>
+                </li>
+                <li>
+                  <a href="forms/umrah.html#sec-two">Deluxe Umrah Packages</a>
+                </li>
+              </ul>
+            </div>
+            <a id="contact-us-form" href="#">Contact Us</a>
+          </div>
+          <span id="burger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-container">
+        <div
+          id="hero"
+          style="background-image: url('forms/imgs/heroIMG.WebP')"
+          aria-label="Scenic travel destination showcasing travel services">
+          <h1 id="hero-heading" data-aos="fade-down">
+            Explore the World with Safa Tour and Travel
+          </h1>
+          <p id="hero-para" data-aos="fade-up">
+            Safa Tour and Travel offers flights, visa services, hotels, holiday
+            packages, forex exchange, and religious pilgrimages like Hajj and
+            Umrah, all in one place!
+          </p>
+          <button>
+            <a href="#our-Services">Explore Now</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section id="our-services-container">
+        <div id="our-Services">
+          <h2>Our Services</h2>
+          <div class="service-card-container">
+            <div class="service-card" data-aos="fade-up">
+              <a href="forms/flight.html">
+                <img
+                  src="forms/imgs/flightIMG.WebP"
+                  alt="Flights Booking Domestic and International"
+              /></a>
+              <h3>Flight Tickets</h3>
+              <p>
+                Safely book domestic and international flights at unbeatable
+                prices with Safa Tour and Travel.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+              <a href="forms/visa.html">
+                <img src="forms/imgs/viaIMG.WebP" alt="Visa Services"
+              /></a>
+              <h3>Visa Assistance</h3>
+              <p>
+                Expert visa assistance to make your travel process smooth and
+                stress-free.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+              <a href="forms/hotels.html">
+                <img src="forms/imgs/hotelsIMG.WebP" alt="Hotels Booking"
+              /></a>
+              <h3>Hotels Booking</h3>
+              <p>
+                Discover and reserve the perfect hotels to match your comfort
+                and budget.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+              <a href="forms/holidays.html"
+                ><img src="forms/imgs/holidayIMG.WebP" alt="Holiday Packages"
+              /></a>
+              <h3>Holiday Packages</h3>
+              <p>
+                Enjoy tailor-made holiday packages crafted for unforgettable
+                experiences.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+              <a href="forms/forexexchange.html">
+                <img
+                  src="forms/imgs/forexexchangeIMG.WebP"
+                  alt="Forex Exchange"
+              /></a>
+              <h3>Forex Exchange</h3>
+              <p>
+                Get the best currency exchange rates with fast and reliable
+                services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pilgrims Section -->
+      <section id="pilgrims-container">
+        <div class="pilgrims">
+          <h2>Religious Pilgrimages</h2>
+          <div class="pilgrims-card-container">
+            <div class="pilgrims-card" data-aos="fade-up">
+              <a href="#" id="contact-link">
+                <img
+                  src="forms/imgs/hajjIMG.WebP"
+                  alt="Comprehensive Hajj Packages with travel and accommodation"
+              /></a>
+              <h3>Hajj Packages</h3>
+              <p>
+                Discover our Hajj packages with travel, accommodations, and
+                guided experiences.
+              </p>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form-wrapper" id="contact-form-wrapper">
+              <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form>
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required />
+
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required />
+
+                  <label for="number">Phone Number:</label>
+                  <input
+                    type="tel"
+                    id="number"
+                    placeholder="Your Phone Number"
+                    required />
+
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                  <button type="submit">Submit</button>
+                  <button type="button" id="close-form">Close</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="pilgrims-card" data-aos="fade-up">
+              <a href="forms/umrah.html">
+                <img
+                  src="forms/imgs/umrahIMG.WebP"
+                  alt="Umrah Packages with guided services"
+              /></a>
+              <h3>Umrah Packages</h3>
+              <p>
+                Explore our Umrah packages with seamless travel, accommodations,
+                and guidance.
+              </p>
+            </div>
+
+            <div class="pilgrims-card" data-aos="fade-up">
+              <a href="#" id="ramadan-contact">
+                <img src="forms/imgs/ramadanIMG.WebP" alt="Ramadan"
+              /></a>
+              <h3>Ramadan</h3>
+              <p>
+                Ramadan is a month of fasting, prayer, reflection, and community
+                observed by Muslims worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about-us-container">
+        <div
+          id="about-us"
+          role="region"
+          aria-label="About Safa Tour and Travel Section">
+          <div class="aboutContent">
+            <h2>About Safa Tour and Travel</h2>
+            <p>
+              Welcome to Safa Tour and Travel, your trusted gateway to
+              unforgettable journeys. Founded in 2022, Safa Tour and Travel is a
+              dynamic and customer-centric travel agency committed to delivering
+              the most enriching travel experiences.
+            </p>
+          </div>
+          <div class="aboutContent">
+            <h2>Our Vision</h2>
+            <p>
+              At Safa Tour and Travel, we believe that travel is not just about
+              reaching a destination; it's about embarking on a journey of
+              discovery, adventure, and personal growth. Our vision is to
+              inspire and empower people to explore the world and create
+              lifelong memories through hassle-free, well-planned trips.
+            </p>
+          </div>
+          <div class="aboutContent">
+            <h2>Our Mission</h2>
+            <p>
+              Our mission is simple: to offer our clients a seamless travel
+              experience. We achieve this by providing expert guidance,
+              personalized itineraries, and unwavering support throughout your
+              journey. We are committed to making your travel dreams a reality.
+            </p>
+          </div>
+          <div class="aboutContent">
+            <h2>Why Safa Tour and Travel?</h2>
+            <ul>
+              <li>
+                <p>
+                  <b>Personalized Service: </b>We understand that no two
+                  travelers are the same. That's why we work closely with you to
+                  tailor every aspect of your trip to your preferences and
+                  needs.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Expertise: </b>Our team consists of experienced travel
+                  professionals who have a deep knowledge of various
+                  destinations. They can recommend the best activities,
+                  accommodations, and hidden gems to make your trip truly
+                  exceptional.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Safety and Reliability: </b>Your safety is our top
+                  priority. We partner with trusted airlines, accommodations,
+                  and service providers to ensure your travel experience is safe
+                  and reliable.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Sustainability: </b>We are committed to promoting
+                  responsible and sustainable tourism. We encourage eco-friendly
+                  practices and support local communities wherever we go.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>24/7 Support: </b>We are there for you round the clock. No
+                  matter where you are in the world, our customer support team
+                  is just a call away to assist you with any issues or concerns.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Global Reach: </b>Safa Tour and Travel offers a wide range
+                  of travel options, from exotic international destinations to
+                  domestic getaways. Wherever your heart desires to go, we can
+                  take you there.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Competitive Pricing: </b>We believe that exceptional travel
+                  experiences shouldn't come with a hefty price tag. Our pricing
+                  is competitive, and we work to find you the best deals within
+                  your budget.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="aboutContent">
+            <h2>Our Services</h2>
+            <ul>
+              <li>
+                <p>
+                  <b>Tour Packages: </b>Discover the world's wonders through our
+                  thoughtfully crafted tour packages. From cultural immersions
+                  to thrilling adventures, our packages cater to all types of
+                  travelers.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Customized Trips: </b>We create bespoke itineraries that
+                  align with your interests and preferences, ensuring every trip
+                  is a unique and unforgettable experience.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Group Travel: </b>Whether you're planning a family reunion,
+                  a corporate retreat, or a school trip, we specialize in
+                  organizing group travel experiences.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Honeymoon Specials: </b>Celebrate love in the world's most
+                  romantic destinations with our exclusive honeymoon packages.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Corporate Travel: </b> Simplify your business travel with
+                  our corporate services, offering cost-effective and efficient
+                  solutions.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="aboutContent">
+            <h2>Contact Us</h2>
+            <p>
+              Let Safa Tour and Travel be your trusted partner in your journey
+              of exploration and discovery. Contact us today to start planning
+              your dream vacation. We look forward to turning your travel dreams
+              into reality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review Section -->
+      <section id="review-container">
+        <h2>What Our Customers Say</h2>
+        <p id="feedbackPara">
+          Your feedback drives us to deliver the best travel experiences. Thank
+          you for choosing Safa Tour and Travel!
+        </p>
+
+        <div class="review-des-container">
+          <div class="review-description">
+            <h3>"Abdul Majid</h3>
+            <p>
+              I recently joined an Umrah group organized by Safa Tours , and it
+              was a truly life-changing experience. The well-planned itinerary,
+              supportive guides, and sense of community made the journey
+              seamless and unforgettable. I highly recommend Safa for this
+              sacred pilgrimage.
+            </p>
+          </div>
+
+          <div class="review-description">
+            <h3>"Nazim Qureshi</h3>
+            <p>
+              I recently booked my flight tickets through Safa Travels and was
+              extremely satisfied. The team was helpful, attentive, and made the
+              process smooth and stress-free. Their prompt responses and
+              commitment to customer satisfaction were impressive. I highly
+              recommend them for reliable flight booking services
+            </p>
+          </div>
+
+          <div class="review-description">
+            <h3>"Ruksar</h3>
+            <p>
+              I entrusted Safa Travel Agency with my visa application, and I
+              couldn't be happier with their service. The team was attentive,
+              knowledgeable, and guided me effortlessly through the process.
+              Thanks to their expertise, I received my visa quickly and without
+              issues. Highly recommend for reliable visa services.
+            </p>
+          </div>
+
+          <div class="review-description">
+            <h3>"Mohd Kaif</h3>
+            <p>
+              As a regular customer of Safa Travels, I can’t recommend them
+              enough! They made booking my flight tickets and Umrah package a
+              breeze. Their team was knowledgeable and efficient, guiding me
+              through the visa application process seamlessly. Plus, their
+              currency exchange service offered great rates.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container">
+        <div class="footer-upper">
+          <div class="footer-content">
+            <h4>Safa Tour and Travel</h4>
+            <p>
+              Your trusted travel partner for Flights, Visa Services, Hotels,
+              Holiday Packages, Forex Exchange, and spiritual journeys.
+            </p>
+          </div>
+
+          <div class="footer-content">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="forms/flight.html">Flight Tickets</a></li>
+              <li><a href="forms/visa.html">Visa Assistance</a></li>
+              <li><a href="forms/hotels.html">Hotels Booking</a></li>
+              <li>
+                <a href="forms/forexexchange.html">Forex Exchange</a>
+              </li>
+              <li>
+                <a href="forms/holidays.html">Holiday Packages</a>
+              </li>
+              <li><a href="#" id="Contact-link">Hajj Packages</a></li>
+              <li><a href="forms/umrah.html">Umrah Packages</a></li>
+
+              <li><a href="#" class="ramadan-contact">Ramadan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h4>Contact Us</h4>
+            <p>
+              Grace Square, Moulana Azad Road, Kausa, Mumbra, Thane,
+              Maharashtra, India
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="https://wa.me/+918976641643" target="_blank"
+                >+91 8976641643</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:safatoursandtravels7@gmail.com"
+                >safatoursandtravels</a
+              >
+            </p>
+          </div>
+
+          <div class="footer-content">
+            <h4>Follow Us</h4>
+            <a
+              href="https://www.instagram.com/safatoursandtravels7/?igsh=bnBuOHQ2OHhiaHJ4"
+              target="_blank"
+              aria-label="Follow us on Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <!-- <a
+              href="https://www.facebook.com"
+              aria-label="Follow us on Facebook"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a> -->
+            <a
+              href="https://x.com/safatravels7"
+              aria-label="Follow us on Twitter"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2022 Safa Tour and Travel. All rights reserved. Developed by
+            <span>
+              <a
+                href="https://wa.me/9987575016"
+                target="_blank"
+                style="text-decoration: none; color: orange">
+                Obaid Ansari.
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        once: false,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
